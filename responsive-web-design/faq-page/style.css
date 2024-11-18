@@ -58,12 +58,12 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin: auto;
 }
 
 .faq-wrapper {
   background-color: var(--questions-bg);
+  flex-direction: column;
 }
 
 .container {
@@ -106,4 +106,5 @@ h6 {
 }
 a {
   text-decoration: none;
+  color: var(--link-color);
 }
