@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+:root {
+  --button-text: #7c19ee;
+  --button-bg: #f2eafd;
+  --card-bg: #fafaf9;
+  --shadow-color: #e5eaf0;
+  --text-mainColor: #20293a;
+  --text-secondaryColor: #394150;
+  --card-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+  --heading: 1.125rem;
+  --body: 0.875rem;
+  --smallText: 0.75rem;
+  --tag: 0.625rem;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Sora";
+  background-color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 350px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 22px;
+  box-shadow: var(--card-shadow);
+  a {
+    margin-inline: 16px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: var(--button-bg);
+    outline: none;
+    color: var(--button-text);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--smallText);
+  }
+  img {
+    width: 100%;
+    padding: 16px;
+    border-radius: 32px;
+  }
+}
+
+.card .card-text {
+  padding: 16px;
+  font-size: var(--smallText);
+  h2 {
+    margin-bottom: 6px;
+    font-size: var(--heading);
+    font-weight: 500;
+  }
+  p {
+    width: 90%;
+    color: var(--text-Color);
+    font-size: var(--smallText);
+    line-height: 1.2rem;
+    font-weight: 400;
+    margin-block-end: 6px 20px;
+  }
+}
+.card .blog-author {
+  margin-block: 16px;
+  padding: 16px;
+  border-top: 1px solid var(--shadow-color);
+  width: 100%;
+  h3 {
+    font-weight: 300;
+    font-size: var(--tag);
+  }
+}
