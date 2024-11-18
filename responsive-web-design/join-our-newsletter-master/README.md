@@ -1,6 +1,6 @@
-# DevChallenges.io - Minimal Blog Card
+# DevChallenges.io - Join Our Newsletter
 
-![Thumbnail for the Minimal Blog Card coding challenge](./thumbnail.jpg)
+![Thumbnail for the Join Our Newsletter coding challenge](./thumbnail.jpg)
 
 ## Welcome! 👋
 
@@ -36,14 +36,14 @@ For more information about the challenge, access the challenge editor on [devCha
 - [x] Initialize the project as a Git repository.
 - [x] Review the design and analyze the different versions for desktop, tablet, and mobile.
 - [x] Plan your approach to the project by identifying reusable CSS classes and structuring your HTML content.
-- [x] Define the base styles for your project, including font-family, font-size, and other general content styles.
-- [x] Begin adding styles from the top of the page and work your way down, ensuring that each section is visually appealing and matches the provided design.
-- [x] Optimize and resize the required assets from the `/images` folder as necessary.
-- [x] Test your project's responsiveness by previewing it on different devices and screen sizes.
-- [x] Once you are satisfied with your implementation, deploy your project to a hosting platform such as GitHub Pages, Vercel, or Netlify.
-- [x] Submit your solution on devchallenges.io and aim to pass the design comparison and performance tests.
-- [x] Replace the default `README.md` file with a custom one that explains your project and reflects on your learning experience. You can use the provided `README-template.md` as a starting point.
-- [] Share your solution with the devChallenges.io community by tweeting [@devchallengesio](https://twitter.com/devchallengesio) and mentioning the repository and live URLs in your tweet. You can also share your solution on other social channels or write a blog post about your experience.
+- [ ] Define the base styles for your project, including font-family, font-size, and other general content styles.
+- [ ] Begin adding styles from the top of the page and work your way down, ensuring that each section is visually appealing and matches the provided design.
+- [ ] Optimize and resize the required assets from the `/resources` folder as necessary.
+- [ ] Test your project's responsiveness by previewing it on different devices and screen sizes.
+- [ ] Once you are satisfied with your implementation, deploy your project to a hosting platform such as GitHub Pages, Vercel, or Netlify.
+- [ ] Submit your solution on devchallenges.io and aim to pass the design comparison and performance tests.
+- [ ] Replace the default `README.md` file with a custom one that explains your project and reflects on your learning experience. You can use the provided `README-template.md` as a starting point.
+- [ ] Share your solution with the devChallenges.io community by tweeting [@devchallengesio](https://twitter.com/devchallengesio) and mentioning the repository and live URLs in your tweet. You can also share your solution on other social channels or write a blog post about your experience.
 - [ ] Seek feedback from the community by using the provided templates or asking specific questions about your implementation.
 
 Good luck and enjoy building your project! 🚀
