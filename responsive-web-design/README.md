@@ -13,3 +13,7 @@
 - [Simple Frequently Asked Questions (FAQ)](https://faq-page-alotfy.surge.sh/)
 
 - [Simple Article Listing](https://simple-article-listing-alotfy.surge.sh/)
+
+- [Simple Feature Section](https://simple-feature-section-alotfy.surge.sh//)
+
+- [Meet Our Team Layout](https://meet-the-team-alotfy.surge.sh/)
