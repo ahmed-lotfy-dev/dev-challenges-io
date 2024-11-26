@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+:root {
+  --heading-size: 2rem;
+  --heading-weight: 700;
+  --heading-clr: #000000;
+  --price-size: 4rem;
+  --price-weight: 600;
+  --label-clr: #263fa9;
+  --body-text-size: 1rem;
+  --body--th-text-weight: 600;
+  --body--tr-text-weight: 400;
+  --allMembers-clr: #394150;
+  --popular-plan-font-clr: #fffefe;
+  --popular-plan-bg-clr: #121826;
+  --popular-plan-cta-clr: #7c4f1e;
+  --heading-bg-clr: #4d556233;
+  --table-bg-clr: #ffffff;
+  --plan-font-clr: #9dc4f8;
+  --table-heading-bg-clr: #f8fafc;
+  --main-plan-cta-bg-clr: #86e7d4;
+  --color-generic: #4d556233;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+.heading-container {
+  text-align: center;
+  background-image: url("/images/bg-pattern.png");
+  background-color: var(--table-heading-bg-clr);
+  margin-bottom: 2rem;
+  .heading {
+    padding-block: 4rem;
+    border-bottom: 1px solid rgba(236, 236, 236, 0.911);
+    h1 {
+      font-size: var(--heading-size);
+      font-weight: var(--heading-weight);
+      margin-bottom: 1rem;
+    }
+    p {
+      max-width: 90%;
+      margin: auto;
+      font-weight: var(--paragraph-text-size);
+      font-weight: var(--paragraph-text-weight) s;
+      line-height: 1.3;
+    }
+  }
+}
+
+.plans-container {
+  margin: 2rem;
+  table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+    /* td, */
+    th {
+      padding: 1rem;
+      max-width: 6rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .free,
+    .team,
+    .popular {
+      display: none;
+    }
+    .popular,
+    .free,
+    .team,
+    .enterprise,
+    .popular-mobile {
+      padding: 1rem;
+    }
+    .popular,
+    .popular-mobile {
+      color: var(--popular-plan-font-clr);
+      background-color: var(--popular-plan-bg-clr);
+    }
+    .price {
+      h3 {
+        font-size: var(--price-size);
+        font-weight: var(--price-weight);
+      }
+    }
+    .title {
+      color: #263fa9;
+    }
+    .price {
+      h3 {
+        font-size: var(--heading-size);
+        font-weight: var(--heading-weight);
+      }
+    }
+    tr:nth-child(1) td:nth-child(4),
+    tr:nth-child(1) td:nth-child(6) {
+      border-radius: 1rem 1rem 0 0;
+    }
+    tr:nth-child(1) td:nth-child(4) span,
+    tr:nth-child(1) td:nth-child(6) span {
+      background-color: #263fa9;
+      padding: 0.2rem 1.2rem;
+      border-radius: 1rem;
+    }
+    tr:nth-child(11) td:nth-child(4),
+    tr:nth-child(11) td:nth-child(6) {
+      border-radius: 0 0 1rem 1rem;
+      background-color: var(--popular-plan-cta-clr);
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .plans-container table {
+    max-width: 900px;
+  }
+  .plans-container table .team,
+  .plans-container table .popular {
+    display: table-cell;
+  }
+  .plans-container table .popular-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .plans-container table {
+    max-width: 1100px;
+  }
+  .plans-container table .free {
+    display: table-cell;
+  }
+}
