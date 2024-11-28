@@ -151,12 +151,14 @@ li:nth-child(1) {
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  background-color: white;
+  background-color: var(--light-bg-color);
 }
 
 .dark-theme {
   width: 25px;
   height: 25px;
+  border-radius: 25px;
+  background-color: var(--heading-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -300,5 +302,22 @@ li:nth-child(1) {
   body {
     max-inline-size: 1350px;
     margin: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navigation .theme-toggle .light-theme {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: var(--light-bg-color);
+  }
+
+  .navigation .theme-toggle .dark-theme {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: var(--light-bg-color);
+    /* background-color: var(--heading-color) */
   }
 }

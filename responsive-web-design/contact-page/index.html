@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Contact Page | devChallenges.io</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img
+          src="./images/Logo@2x.png"
+          alt=""
+          sizes="(max-width 612px),100vw"
+          srcset="./images/Logo@2x.png 300w, ./images/Logo.svg 600w"
+        />
+      </header>
+      <div class="heading">
+        <h1>Interested in our business pricing?</h1>
+        <p>
+          Fill out the form to view details and we’ll contact you as soon as
+          possible.
+        </p>
+      </div>
+
+      <form action="">
+        <div class="name">
+          <label for="Name">Name</label>
+          <input type="text" id="Name" placeholder="Ethen Johnson" required />
+        </div>
+        <div class="email">
+          <label for="Email">Company Email</label>
+          <input
+            type="email"
+            id="Email"
+            placeholder="ethan@johnson.com"
+            required
+          />
+        </div>
+        <div class="company-size">
+          <label for="CompanySize">Company Size</label>
+          <select name="companySize" id="CompanySize">
+            <option value="50-100">50-100 employees</option>
+          </select>
+        </div>
+        <div class="subject">
+          <label for="Subject">Subject</label>
+          <select name="subject" id="Subject">
+            <option value="landing-page">Building Landing pages</option>
+          </select>
+        </div>
+        <div class="message">
+          <label for="Message">Message</label>
+          <textarea
+            type="text-area"
+            id="Message"
+            rows="10"
+            cols="50"
+            placeholder="50-100 employees"
+          ></textarea>
+        </div>
+
+        <button type="submit">Contact Sales</button>
+      </form>
+    </div>
+    <div class="author-info">
+      Coded by <a href="#">Ahmed Lotfy</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
