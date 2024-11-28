@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --heading-size: 1.5rem;
+  --heading-weight: 700;
+  --body-size: 1rem;
+  --body-weight1: 400;
+  --body-weight2: 500;
+  --body-weight3: 600;
+  --button-bg-clr: #1d1d1f;
+  --cart-bg-clr: #d2d5da;
+  --body-bg-clr: #e5e7eb;
+  --contact-info-input-bg-clr: #f3f4f6;
+  --coupon-input-bg-clr: #ffffff;
+  --shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--contact-info-input-bg-clr);
+}
+
+.wrapper {
+  margin: auto;
+  padding: 1rem;
+  height: 100vh;
+  background-image: url("/images/background-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  box-shadow: var(--shadow);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin-top: 1.5rem;
+  h1 {
+    font-size: var(--heading-size);
+    font-weight: var(--heading-weight);
+    text-transform: capitalize;
+  }
+  p {
+    margin-left: 1rem;
+    background: black;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cart {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 1rem 1rem 0 0;
+  background-color: var(--cart-bg-clr);
+}
+
+.item-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  .item-image {
+    width: 30%;
+    img {
+      width: 100%;
+      background: white;
+      padding: 12px;
+      border-radius: 1rem;
+      object-fit: contain;
+      aspect-ratio: 1;
+    }
+  }
+  .item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 3rem;
+    font-weight: var(--body-weight2);
+    h3 {
+      font-size: var(--body-size);
+    }
+    .color {
+      font-weight: var(--body-weight1);
+    }
+    .name,
+    .quantity {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: var(--body-weight2);
+    }
+
+    .quantity span:last-child {
+      font-size: 1.5rem;
+      font-weight: var(--body-weight1);
+    }
+  }
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(128, 128, 128, 0.233);
+  margin-top: 2rem;
+  .coupon {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 1.5rem;
+    width: 100%;
+    input {
+      width: 50%;
+      border-radius: 0.5rem;
+      border: none;
+      margin-right: 1rem;
+    }
+    input::placeholder {
+      font-size: var(--body-size);
+      font-weight: var(--body-weight1);
+      padding-left: 10px;
+    }
+    button {
+      width: 50%;
+      background-color: var(--button-bg-clr);
+      border: none;
+      color: var(--cart-bg-clr);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-size: var(--body-size1);
+      font-weight: 600;
+    }
+  }
+  .total-prices {
+    .price-calc {
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        margin-top: 0.5rem;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.contact-wrapper {
+  width: 100%;
+  background-color: white;
+
+  .contact-information {
+    max-width: 90%;
+    margin: auto;
+    h2 {
+      margin-block: 2rem;
+      font-size: var(--body-size);
+      font-weight: var(--body-weight3);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      label {
+        margin-block: 1rem 0.5rem;
+      }
+      input,
+      select {
+        padding: 1rem;
+        outline: none;
+        border: 1px solid rgba(128, 128, 128, 0.274);
+        border-radius: 0.5rem;
+        background-color: rgba(214, 214, 214, 0.329);
+      }
+      label[for="country"] {
+        width: 50%;
+      }
+      label[for="postalcode"],
+      input[id="postalcode"] {
+        width: 100%;
+      }
+      .country-postal {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+      .country,
+      .postal {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .postal {
+        margin-left: 2rem;
+      }
+
+      button {
+        width: 100%;
+        background-color: var(--button-bg-clr);
+        border: none;
+        color: var(--cart-bg-clr);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: var(--body-size1);
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    max-inline-size: 850px;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .cart {
+    margin-top: 0;
+    border-radius: 1rem 0 0 1rem;
+  }
+  .contact-wrapper {
+    border-radius: 0 1rem 1rem 0;
+  }
+}

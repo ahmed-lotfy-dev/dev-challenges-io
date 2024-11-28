@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Device Shop Checkout | devChallenges.io</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>checkout</h1>
+        <p>3 items</p>
+      </div>
+      <div class="content">
+        <div class="cart">
+          <div class="items">
+            <div class="item-wrapper">
+              <div class="item-image">
+                <img src="./images/Gold@2x.png" alt="" />
+              </div>
+              <div class="item-text">
+                <div class="name">
+                  <h3>iPhone 12 Pro</h3>
+                  <span>&dollar;999.00</span>
+                </div>
+                <span class="color">Golden</span>
+                <div class="quantity">
+                  <span>x 1</span>
+                  <span>x</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-wrapper">
+              <div class="item-image">
+                <img src="./images/Apple-watchx2.png" alt="" />
+              </div>
+              <div class="item-text">
+                <div class="name">
+                  <h3>iPhone 12 Pro</h3>
+                  <span>&dollar;999.00</span>
+                </div>
+                <span class="color">Blue</span>
+
+                <div class="quantity">
+                  <span>x 1</span>
+                  <span>x</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-wrapper">
+              <div class="item-image">
+                <img src="./images/iMac@2x.png" alt="" />
+              </div>
+              <div class="item-text">
+                <div class="name">
+                  <h3>iPhone 12 Pro</h3>
+                  <span>&dollar;999.00</span>
+                </div>
+                <span class="color">Green</span>
+
+                <div class="quantity">
+                  <span>x 1</span>
+                  <span>x</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prices">
+            <div class="coupon">
+              <input
+                type="text"
+                name="coupon"
+                id="coupon"
+                placeholder="Enter coupon code"
+              />
+              <button>Apply Coupon</button>
+            </div>
+            <div class="total-prices">
+              <div class="price-calc">
+                <h4>Sub total</h4>
+                <span>&dollar;2597.00</span>
+              </div>
+              <div class="price-calc">
+                <h4>Tax</h4>
+                <span>&dollar;623.28</span>
+              </div>
+              <div class="price-calc">
+                <h4>Total</h4>
+                <span>&dollar;3220.28 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-information">
+            <h2>Contact Information</h2>
+            <form action="">
+              <label for="name">First & Last name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter first & last name"
+              />
+
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+
+              <div class="country-postal">
+                <div class="country">
+                  <label for="country">Country</label>
+                  <select name="country" id="country">
+                    <option value="finland">Finland</option>
+                  </select>
+                </div>
+                <div class="postal">
+                  <label for="postalcode">Postal Code</label>
+                  <input type="number" id="postalcode" placeholder="00270" />
+                </div>
+              </div>
+
+              <button class="submit-btn" type="submit">Continue</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
