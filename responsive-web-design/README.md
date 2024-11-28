@@ -17,3 +17,11 @@
 - [Simple Feature Section](https://simple-feature-section-alotfy.surge.sh//)
 
 - [Meet Our Team Layout](https://meet-the-team-alotfy.surge.sh/)
+
+- [Pricing Table](https://pricing-table-alotfy.surge.sh/)
+
+- [Simple Homepage](https://simple-homepage-alotfy.surge.sh/)
+
+- [Contact Page](https://contact-page-alotfy.surge.sh/)
+
+- [Device Shop Checkout](https://device-shop-checkout-alotfy.surge.sh/)

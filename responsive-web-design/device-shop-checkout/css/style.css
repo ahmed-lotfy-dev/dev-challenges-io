@@ -228,7 +228,7 @@ body {
 
 @media (min-width: 1024px) {
   .content {
-    max-inline-size: 850px;
+    max-inline-size: 1000px;
     margin: auto;
     flex-direction: row;
     margin-top: 3rem;
