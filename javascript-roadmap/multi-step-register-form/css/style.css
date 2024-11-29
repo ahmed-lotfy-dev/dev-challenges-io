@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --heading-size: 1.25rem;
+  --label-small-text-size: 0.75rem;
+  --body-text-size: 1rem;
+  --tab-text: 0.875rem;
+  --btn-clr-1: #652cd1;
+  --btn-clr-2: #845eee;
+  --bg-clr-1: #121826;
+  --bg-clr-2: #212936;
+  --gray-dark-clr: #394150;
+  --gray-lighter-clr: #4d5562;
+  --gray-lightest-clr: --#A1A1A9;
+  --font-clr: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-clr-1);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  color: var(--font-clr);
+}
+
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 5rem;
+  position: relative;
+}
+.container::before {
+  position: absolute;
+  content: "";
+  background-image: url("/images/blur-radial.svg");
+  background-size: cover;
+  background-position: bottom right;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: -16%;
+}
+.container::after {
+  position: absolute;
+  content: "";
+  background-image: url("/images/blur-radial.svg");
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  right: -16%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1rem;
+  /* From https://css.glass */
+  background: var(--bg-clr-2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.1px);
+  -webkit-backdrop-filter: blur(15.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button {
+  margin-top: 2rem;
+  width: 5rem;
+  margin: auto;
+}
