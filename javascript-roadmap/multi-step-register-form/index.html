@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multi Step Register Form</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <form action="">
-        <div class="step block">
-          <h2>Register</h2>
-          <label for="name" aria-label="name input label">Name</label>
-          <input
-            type="text"
-            id="name"
-            required
-            aria-required="true"
-            aria-label="name input"
-          />
 
-          <label for="email" aria-label="email input label">Email</label>
-          <input
-            type="email"
-            aria-label="email"
-            aria-required
-            aria-label="email input"
-            required
-          />
-          <button class="step1-button" aria-label="continue button next-step">Continue</button>
-        </div>
-        <div class="step block">
-          <h2>Which topics you are interested in?</h2>
-            <input type="checkbox" id="checkbox" value="software development">software development</input>
-            <input type="checkbox" value="user experience">user experience</input>
-            <input type="checkbox" value="graphic design">graphic design</input>
-          <button class="step2-button"aria-label="continue button next-step">Continue</button>
-        </div>
-        <div class="step block">
-          <h2>Summary</h2>
-          <button class="step3-button" aria-label="continue button next-step">Continue</button>
-        </div>
-      </form>
-      <div class="step-status">
-        <p class="step-title">hello world</p>
-        <span></span>
-        <span></span>
-        <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi Step Register Form</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form step1" action="#" method="post">
+      <h2>Register</h2>
+      <div class="form-input">
+        <label for="name" aria-label="name input label">Name</label>
+        <input type="text" name="name" id="name" placeholder="enter your name" required aria-required="true"
+          aria-label="name input" minlength="4" maxlength="25" />
       </div>
+      <div class="form-input">
+        <label for="email" aria-label="email input label">Email</label>
+        <input type="email" name="email" id="email" aria-label="email" aria-required autocomplete="email"
+          placeholder="example@gmail.com" aria-label="email input" required />
+      </div>
+      <button class="step1-button" aria-label="continue button next-step">Continue</button>
+    </form>
+
+    <form class="form step2">
+      <h2>Which topics you are interested in?</h2>
+      <div class="form-input">
+        <input type="checkbox" name="userInterest" id="softwareDevelopment" value="Software Development">
+        <label for="softwareDevelopment">Software Development</label>
+      </div>
+      <div class="form-input">
+        <input type="checkbox" name="userInterest" id="userExperience" value="User Experience">
+        <label for="userExperience">User Experience</label>
+      </div>
+      <div class="form-input">
+        <input type="checkbox" name="userInterest" id="graphicDesign" value="Graphic Design">
+        <label for="graphicDesign">Graphic Design</label>
+      </div>
+      <button class="step2-button" aria-label="continue button next-step">Continue</button>
+    </form>
+
+    <form class="form step3" style="display:block;">
+      <h2>Summary</h2>
+      <div class="user-details">
+        <div>
+          <p>Name: <span class="userName" id="userName"></span></p>
+          <p>Email: <span class="userEmail" id="userEmail"></span></p>
+        </div>
+        <div>
+          <p>Topics:</p>
+          <ul class="userInterest"></ul>
+        </div>
+      </div>
+      <button class="step3-button" aria-label="continue button next-step">Continue</button>
+    </form>
+
+    <div class="step-status">
+      <p class="step-title">Step <span class="numStep">1</span> of 3</p>
+      <ul class="step-container">
+        <div class="step-indicator active-step"></div>
+        <div class="step-indicator"></div>
+        <div class="step-indicator"></div>
+      </ul>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
