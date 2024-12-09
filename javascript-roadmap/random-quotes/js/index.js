@@ -7,9 +7,14 @@ const shareQuoteElement = document.querySelector(".share-quote")
 let quote
 
 async function fetchQuote() {
-  const response = await fetch("https://api.quotable.io/quotes/random")
-  const quoteData = await response.json()
-  quote = quoteData[0]
+  try {
+    const response = await fetch("https://api.quotable.io/quotes/random")
+    const quoteData = await response.json()
+    quote = quoteData[0]
+  } catch (error) {
+    quote.content = `no quote there cannot fetch quote data`
+    console.log(error)
+  }
 }
 
 function createElements() {
