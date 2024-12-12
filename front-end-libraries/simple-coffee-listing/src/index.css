@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "DM Sans", sans-serif;
+    --heading-size: 2rem;
+    --body-size: 1rem;
+    --label-size: 0.875rem;
+    --small-size: 0.625rem;
+    --price-size: 0.75rem;
+    --wrapper-bg-clr: #1b1d1f;
+    --page-bg-clr: #111315;
+    --btn-active-clr: #6f757c;
+    --price-bg-clr: #bee3cc;
+    --text-clr: #fef7ee;
+    --popular-bg-clr: #f6c768;
+  }
+}
+
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
