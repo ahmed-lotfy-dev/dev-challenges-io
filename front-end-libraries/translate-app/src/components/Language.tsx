@@ -94,7 +94,7 @@ export default function Language({ main }: props) {
   }, [])
 
   return (
-    <div className="w-[85%] bg-[var(--1st-box-bg-clr)] rounded-3xl p-5 border-[0.5px] border-[var(--border-clr)]">
+    <div className=" col-span-12 lg:col-span-6 bg-[var(--1st-box-bg-clr)] rounded-3xl p-5 border-[0.5px] border-[var(--border-clr)]">
       <form onSubmit={handleTranslate} className="">
         <div className="flex items-center gap-4 ml-3 my-2">
           {main ? (

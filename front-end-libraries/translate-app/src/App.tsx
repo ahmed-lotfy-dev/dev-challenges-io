@@ -11,11 +11,17 @@ function App() {
         alt=""
         className="absolute w-full h-[450px] object-cover"
       />
-      <div className="absolute w-full h-full grid items-center">
-        <div className="flex flex-col gap-4 justify-center items-center w-full">
-          <img src={logoImage} alt="Logo Image ranslated.io" />
+      <div className="absolute w-full h-full items-center">
+        <div className="flex flex-col gap-4 justify-center items-center w-full h-full">
+          <img
+            src={logoImage}
+            alt="Logo Image ranslated.io"
+            className="lg:col-span-2"
+          />
+          <div className="grid grid-cols-12 gap-10 w-full px-14 p-5">
           <Language main={true} />
           <Language />
+          </div>
         </div>
       </div>
     </div>
