@@ -33,3 +33,7 @@
 - [Guess The Word Game](https://guess-the-word-alotfy.surge.sh/)
 
 - [Random Quote](https://random-quote-alotfy.surge.sh/)
+
+## Front-end Libraries
+
+- [Simple Coffee Listing](https://simple-coffee-listing-alotfy.surge.sh/)

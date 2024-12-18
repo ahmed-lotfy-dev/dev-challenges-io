@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text-clr: #f9fafb;
+    --text-clr-2: #cdd5e0;
+    --page-bg-clr: #040711;
+    --btn-bg-clr: #3662e3;
+    --btn-border-clr: #7ca9f3;
+    --1st-box-bg-clr: #212936dc;
+    --2nd-box-bg-clr: #121826cc;
+    --active-bg-clr: #4d5562;
+    --border-clr: #4d5562;
+  }
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  font-family: "DM Sand", sans-serif;
+}
