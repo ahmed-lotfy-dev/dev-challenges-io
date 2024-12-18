@@ -1,8 +1,6 @@
 import "./App.css"
 import logoImage from "./assets/logo.svg"
 import heroImage from "./assets/hero_img.jpg"
-// import FirstLanguage from "./components/First-Language"
-// import SecondLanguage from "./components/SecondLanguage"
 import Language from "./components/Language"
 
 function App() {
@@ -16,8 +14,6 @@ function App() {
       <div className="absolute w-full h-full grid items-center">
         <div className="flex flex-col gap-4 justify-center items-center w-full">
           <img src={logoImage} alt="Logo Image ranslated.io" />
-          {/* <FirstLanguage /> */}
-          {/* <SecondLanguage /> */}
           <Language main={true} />
           <Language />
         </div>
