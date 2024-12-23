@@ -7,7 +7,7 @@ import useFetch from "./hooks/useFetch"
 import ProfileData from "./components/ProfileData"
 
 function App() {
-  const { username, setProfileData, setReposData ,reposCount} =
+  const { username, setProfileData, setReposData, reposCount, setUsername } =
     useContext(AppContext)
 
   const { data: profileData } = useFetch<ProfileDataType>(

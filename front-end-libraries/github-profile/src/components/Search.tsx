@@ -13,9 +13,10 @@ export default function Search() {
   console.log({ searchValue, debouncedValue })
 
   return (
-    <div className="w-full flex justify-center items-center absolute top-[50px] left-0">
+    <div className="w-full flex justify-center items-center absolute top-[50px] left-0 ">
+      <div className="w-[65%] md:w-[55%] lg:w-[35%] flex justify-center items-center group bg-pageBgColor rounded-xl">
         <svg
-          className="absolute left-[20%] md:left-[20%] lg:left-[28%] xl:left-[40%] z-[999]"
+          className="ml-5"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -30,13 +31,14 @@ export default function Search() {
             strokeLinecap="round"
           />
         </svg>
-      <input
-        type="text"
-        name="username"
-        placeholder="Search by username"
-        className="w-2/3 md:max-w-lg m-auto z-[998] pl-14 py-4 rounded-xl placeholder:text-clrNotKnow2 bg-pageBgColor focus:bg-pageBgColor focus:outline-none outline:none focus:outline-textColor2"
-        onChange={searchHandler}
-      />
+        <input
+          type="text"
+          name="username"
+          placeholder="Search by username"
+          className="w-full md:max-w-lg ml-5 z-[998] py-4 rounded-xl placeholder:text-clrNotKnow2 bg-pageBgColor focus:outline-none group-focus:outline:none group-focus:outline-textColor2"
+          onChange={searchHandler}
+        />
+      </div>
       <SearchResults debouncedValue={debouncedValue} />
     </div>
   )

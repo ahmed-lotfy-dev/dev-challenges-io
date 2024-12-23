@@ -42,7 +42,7 @@ export default function SearchResults({ debouncedValue }: Props) {
 
   return (
     <div
-      className={`absolute w-[36rem] h-[320px] overflow-y-auto no-scrollbar top-0 mt-[6.5%] rounded-xl bg-pageBgColor cursor-pointer border-2 border-textColor2 ${
+      className={`absolute h-[320px] w-[65%] md:w-[55%] lg:w-[35%] overflow-y-auto no-scrollbar top-0 mt-[12%] sm:mt-[9%] md:mt-[9%] lg:mt-[6%] xl:mt-[4.5%] rounded-xl bg-pageBgColor cursor-pointer border-2 border-textColor2 ${
         showSearchResults ? "absolute" : "hidden"
       }`}
     >
