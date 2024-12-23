@@ -37,3 +37,7 @@
 ## Front-end Libraries
 
 - [Simple Coffee Listing](https://simple-coffee-listing-alotfy.surge.sh/)
+
+- [Translate App](https://translate-app-alotfy.surge.sh/)
+
+- [Github Profile](http://github-profile-alotfy.surge.sh/)
