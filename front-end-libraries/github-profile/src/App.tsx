@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="w-full h-screen relative">
-      <div className="w-full h-[300px] bg-[url(src/assets/hero-image-github-profile.png)] bg-cover bg-no-repeat -z-50"></div>
+      <div className="w-full h-[300px] bg-[url(/hero-image-github-profile.png)] bg-cover bg-no-repeat -z-50"></div>
       <div className="w-full  text-textColor1 max-w-6xl m-auto">
         <Search />
         <ProfileData />
