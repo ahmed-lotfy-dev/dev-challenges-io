@@ -13,8 +13,7 @@ const AppContext = createContext<AppContextType>(null!)
 export default function ContextProvider({ children }: { children: ReactNode }) {
   const [query, setQuery] = useState("github")
   const [countriesData, setCountriesData] = useState<ApiResponse | null>(null)
-  const [isSearching, setIsSearching] = useState(false)
-  const [reposCount, setReposCount] = useState(4)
+
 
   return (
     <AppContext.Provider
