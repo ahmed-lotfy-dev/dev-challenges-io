@@ -1,6 +1,7 @@
 export interface ApiResponseItem {
   altSpellings: string[]
   area: number
+  borders?: string[]
   capital: string[]
   capitalInfo: {
     latlng: number[]
@@ -21,6 +22,7 @@ export interface ApiResponseItem {
     png: string
     svg: string
   }
+  subregion: string
   idd: {
     root: string
     suffixes: string[]

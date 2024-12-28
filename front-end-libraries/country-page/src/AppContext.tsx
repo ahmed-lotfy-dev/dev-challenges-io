@@ -1,27 +1,47 @@
-import { createContext, ReactNode, useState } from "react"
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useState,
+} from "react"
 import { ApiResponse } from "./types"
 
-export type AppContextType = {
+export type filtersType = {
   query: string
-  setQuery: React.Dispatch<React.SetStateAction<string>>
+  countriesCount: number
+  sortBy: string
+  isUnMember: boolean
+  isIndependant: boolean
+  region: string[]
+}
+
+export type AppContextType = {
   countriesData: ApiResponse | null
   setCountriesData: React.Dispatch<React.SetStateAction<ApiResponse | null>>
+  filters: filtersType
+  setFilters: React.Dispatch<React.SetStateAction<filtersType>>
 }
 
 const AppContext = createContext<AppContextType>(null!)
 
 export default function ContextProvider({ children }: { children: ReactNode }) {
-  const [query, setQuery] = useState("github")
   const [countriesData, setCountriesData] = useState<ApiResponse | null>(null)
-
+  const [filters, setFilters] = useState<filtersType>({
+    query: "",
+    countriesCount: 0,
+    sortBy: "population",
+    isUnMember: false,
+    isIndependant: false,
+    region: [],
+  })
 
   return (
     <AppContext.Provider
       value={{
-        query,
-        setQuery,
         countriesData,
         setCountriesData,
+        filters,
+        setFilters,
       }}
     >
       {children}
@@ -29,4 +49,7 @@ export default function ContextProvider({ children }: { children: ReactNode }) {
   )
 }
 
-export { AppContext }
+export const useDataContext = () => {
+  if (!AppContext) throw new Error("No context available")
+  return useContext(AppContext)
+}

@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react"
 
-function useFetch<T>(url: string): { data: T | null;loading:boolean; error: any } {
+function useFetch<T>(url: string): {
+  data: T | null
+  loading: boolean
+  error: any
+} {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     let isMounted = true
