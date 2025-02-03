@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <title>QR code generator | devChallenges.io</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="qr-container">
+      <img class="logo" src="images/Logo.svg" srcset="images/Logo-small.svg 200w, images/Logo.svg 400w"
+        sizes="(max-width: 600px) 200px, 400px" alt="company logo qr-code" />
+      <form>
+        <input type="text" placeholder="Enter an url" />
+        <button type="submit" class="qr-generate">QR code</button>
+      </form>
+    </div>
+    <div class="qr-result hidden">
+      <img class="qr-result-logo" src="/images/Logo.svg" alt="">
+      <div id="qrcode">
+      </div>
+      <div class="qr-bq"></div>
+      <div class="buttons">
+        <div class="btn download-btn">
+          <button>Download</button>
+          <img src="/images/Load_circle_duotone.svg" alt="">
+        </div>
+        <div class="btn share-btn">
+          <button>Share</button>
+          <img src="/images/link_alt.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- 
+
+
+  Download
+  
+  Share
+  
+  -->
+
+  <div class=" author-info">
+    Coded by <a href="#">Ahmed Lotfy</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </div>
+</body>
+
+</html>

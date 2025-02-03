@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #030616;
+  position: relative;
+}
+
+.author-info {
+  width: 100%;
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.author-info a {
+  color: white;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/qa-bg.jpg") no-repeat center center/cover;
+  z-index: -99999;
+}
+
+.qr-container {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo {
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.3rem;
+  background-color: #030616;
+  border: 2px #263fa9 solid;
+  color: white;
+  padding-left: 2rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2px #647ce4 solid;
+}
+
+.qr-generate {
+  background-color: #263fa9;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  color: white;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.qr-result.hidden {
+  display: none;
+}
+
+.qr-result {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  position: relative;
+}
+
+.qr-result-logo {
+  width: 100%;
+  margin: auto;
+  max-width: 12rem;
+  margin-bottom: 10rem;
+  border-radius: 0.5rem;
+}
+
+.qr-bq {
+  border-radius: 50%;
+  background-color: #282e3e;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+#qrcode img {
+  width: 80%;
+  outline: 2rem white solid;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .qr-container {
+    width: 80%;
+  }
+}
+
+.btn {
+  background-color: #263fa9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  gap: 0.5rem;
+  margin-block: 5rem;
+}
+
+.btn button {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.buttons button {
+  font-size: 1rem;
+}
+
+.buttons.hidden {
+  display: none;
+}
