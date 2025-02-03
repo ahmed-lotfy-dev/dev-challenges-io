@@ -13,7 +13,7 @@ button.addEventListener("click", (event) => {
     return
   }
 
-  qrCodeElement.innerHTML = "" // Clear previous QR code
+  qrCodeElement.innerHTML = ""
   const qrCode = new QRCode(qrCodeElement, {
     text: input.value,
     width: 300,
@@ -40,7 +40,6 @@ shareBtn.addEventListener("click", () => {
   const url = input.value.trim()
 
   if (url) {
-    // Copy the URL to the clipboard
     navigator.clipboard
       .writeText(url)
       .then(() => {

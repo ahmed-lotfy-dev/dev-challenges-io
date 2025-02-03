@@ -75,9 +75,9 @@ input:focus {
   border-radius: 0.5rem;
   position: absolute;
   color: white;
+  cursor: pointer;
   right: 1.5rem;
   bottom: 1.5rem;
-  cursor: pointer;
   font-weight: bold;
 }
 
@@ -133,12 +133,6 @@ input:focus {
   border-radius: 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  .qr-container {
-    width: 80%;
-  }
-}
-
 .btn {
   background-color: #263fa9;
   padding: 1rem 2rem;
@@ -171,4 +165,23 @@ input:focus {
 
 .buttons.hidden {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .qr-container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .qr-container {
+    width: 80%;
+  }
+  form {
+    max-width: 60%;
+    margin: auto;
+  }
+  .qr-generate {
+    right: 22%;
+  }
 }
