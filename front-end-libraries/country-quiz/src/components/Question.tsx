@@ -38,10 +38,19 @@ export default function Question({
         <h2>{question.question}</h2>
       </div>
       {question.answers.map((answer, idx) => (
-        <div key={idx} className="flex flex-col last:mb-6 mt-3 px-4">
+        <div
+          key={idx}
+          className={`flex flex-col last:mb-6 mt-3 px-4 ${
+            selectedAnswer != question.correctAnswer ? "bg-clr-1" : "bg-red-500"
+          } rounded-xl`}
+        >
           <button
             onClick={handleAnswers}
-            className={`bg-clr-1 rounded-xl cursor-pointer py-4 font-bold `}
+            className={`bg-clr-1 rounded-xl cursor-pointer py-4 font-bold hover:bg-red-400 ${
+              selectedAnswer ==answer&&selectedAnswer!==question.correctAnswer
+                ? "bg-red-400"
+                : "bg-clr-1"
+            } rounded-xl}`}
           >
             <div className="flex ml-2 justify-center items-center gap-3">
               {answer}

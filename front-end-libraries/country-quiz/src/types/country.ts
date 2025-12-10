@@ -30,3 +30,10 @@ export interface Country {
     }
   }
 }
+
+export interface Question {
+  id: string
+  question: string
+  correctAnswer: string
+  options: string[]
+}

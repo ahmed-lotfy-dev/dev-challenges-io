@@ -36,6 +36,8 @@
 
 - [Random Quote](https://random-quote-alotfy.surge.sh/)
 
+- [QR Code Generator](https://qr-code-generator-alotfy.surge.sh/)
+
 ## Front-end Libraries
 
 - [Simple Coffee Listing](https://simple-coffee-listing-alotfy.surge.sh/)
